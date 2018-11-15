@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Portfolio')">Portfolio</button>
+        <button class="tablinks" onclick="openTab(event, 'GET1033')">GET1033</button>
+        <button class="tablinks" onclick="openTab(event, 'Documentation')">Documentation</button>
+    </div>
+
+    <div id="GET1033" class="tabcontent">
+      <h3>Final Project</h3>
+      <p>
+        <br>This is my GET1033 Final Project, a responsive online portfolio that is customizable based on my personal preferences. It can be a portfolio for potential employers or even friends, as they can easily browse through online to know more about me. This project is designed on Adobe XD and coded from scratch on Brackets, before being transferred to sublime text for convenience.</br>
+        <br>1. Adobe XD</br>
+        <br>2. Brackets</br>
+        <br>3. html, css</br>
+        <br>4. Overlapping words (-webkit-transform: translateX(-50%))</br>
+        <br>5. Hover</br>
+        <br>6. Track (-webkit-scrollbar:)</br>
+        <br>7. Responsive feature (@media only screen and (max-width:__px))</br>
+        <br>8. Tabs (function openTab)</br>
+        <br>9. Sidenav full width on images </br>
+
+      </p>
+    </div>
+
+    <div id="Documentation" class="tabcontent">
+      <h3>Documentation</h3>
+      <p>This is the tab that documents my struggles when completing this project. <br> I struggled so much. </br>
+      </p> 
+    </div>
+        
+        <header>
+            <h1>LIM WAN LING</h1>
+            <p>I am a Year 2 Business Administration student learning how to code for the first time from GET1033 and is currently learning how to use Adobe XD and code on Brackets. Send me a <a href="#">message</a>!</p>
+        </header>
+        
+        <div class="work">
+            <a href="#"><img src="images/01.png" alt="project image"></a>
+            <a href="#"><img src="images/02.png" alt="project image"></a>
+            <a href="#"><img src="images/03.png" alt="project image"></a>
+            <a href="#"><img src="images/04.png" alt="project image"></a>
+            <a href="#"><img src="images/05.png" alt="project image"></a>
+            <a href="#"><img src="images/06.png" alt="project image"></a>
+        </div>
+
+        <div class="aboutMe">
+                <h1>More<br>About Me</h1>
+                <h2 class="Know">KNOW</h2> 
+                <ul>
+                    <li>Calligraphy Instructor</li>
+                    <li>Rhythmic Gymnastics Coach</li>
+                    <li>Designer</li>
+                    <li>Touch Rugby Player</li>
+                    <li>Dancer</li>
+                    <li>RAG Creative Director</li>
+                </ul>
+        </div>
+     
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <h href="#">Calligraphy</h>
+            <a href="#">I have a passion for art and self-taught modern calligraphy since I was 17. Using my skills, I conducted calligraphy classes for over 50 students in collaboraion with Actually and BonAppetour. In addition, I organised community-based calligraphy sessions for the elderly at Boon Lay community centre. </a>
+          </div>
+        </div>
+
+        <div id="myNav2" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+          <div class="overlay-content">
+            <h href="#">RAG Creative Director</h>
+            <a href="#">As the RAG Vice Project Director (Creative), I led a group of 23 committee members for the freshmen orientation of 180 freshmen. I spearheaded the creative direction of Business RAG 2018, achieve the major awards of Best Floats, Best Dance, Best Costumes, Best Booth as well as RAG Gold for that year. 
+            </a>
+          </div>
+        </div>
+
+        <span style="cursor:pointer" onclick="openNav()">
+            <div class="work2">
+                <a href="#"><img src="images/Large1.png" alt="project image"></a>
+            </div>
+        </span>
+
+        <span style="cursor:pointer" onclick="openNav2()">
+            <div class="work2">
+                <a href="#"><img src="images/Large2.png" alt="project image"></a>
+            </div>
+        </span>
+
+        <script>
+            function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+                    evt.currentTarget.className += " active";   
+            }
+
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+            }
+            function openNav2() {
+              document.getElementById("myNav2").style.width = "100%";
+            }
+
+            function closeNav2() {
+              document.getElementById("myNav2").style.width = "0%";
+            }
+        </script>
+
+        <footer>
+            <p>© Lim Wan Ling 2018</p>
+        </footer>
+    </div>
+</body>
+</html>
